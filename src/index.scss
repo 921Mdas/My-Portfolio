@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --firefly: #0c1c2f;
+  --rock-blue: #9eb0c9;
+  --regent-gray: #7c86a2;
+  --blue-bayoux: #54687d;
+  --lynch: #6c7794;
+  --fiord: #46516a;
+  --ocean-green: #3b988e;
+  --pickled-bluewood: #323e56;
+  --fiord: #3b4a64;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  background: var(--firefly);
+  padding: 0;
+  margin: 0;
+}
