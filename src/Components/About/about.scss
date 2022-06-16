@@ -1,0 +1,75 @@
+@import "../../index.scss";
+
+.about {
+  width: 80%;
+  height: 80vh;
+  padding: var(--padding);
+  border: solid 3px green;
+  margin: 100px auto 0 auto;
+
+  .title {
+    border: solid 1px red;
+    margin-bottom: 1em;
+    @include flex(flex-start, center, row, 15px);
+
+    .about_line {
+      height: 2px;
+      width: 30%;
+      background-color: var(--rock-blue);
+      opacity: 0.2;
+    }
+
+    span {
+      font-size: var(--ft-2xtra);
+      color: var(--ocean-blue);
+    }
+
+    h1 {
+      color: var(--rock-blue);
+      font-size: clamp(var(--ft-xtra), 5vw, var(--ft-22xtra));
+    }
+  }
+
+  .about_brandstatement {
+    border: solid 1px red;
+    @include flex(flex-start, center, row, 15px);
+
+    .brandstatement {
+      border: solid 1px yellow;
+      font-size: var(--ft-lg);
+      color: var(--regent-gray);
+      height: 100%;
+      width: 70%;
+    }
+
+    .avatar {
+      border: solid 1px orange;
+      height: 40vh;
+      width: 50vw;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  .stacks {
+    border: solid 2px blue;
+    margin-top: 1em;
+    p {
+      color: var(--regent-gray);
+      height: 5vh;
+    }
+
+    .stacks_list {
+      @include flex(flex-start, center, row, 15px);
+      border: solid 1px plum;
+    }
+
+    .stack_arrow {
+      color: var(--ocean-blue);
+      font-size: var(--ft-sm);
+      margin-right: 5px;
+    }
+  }
+}

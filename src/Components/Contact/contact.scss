@@ -1,0 +1,62 @@
+@import "../../index.scss";
+
+.contact_section {
+  width: 80%;
+  height: 50vh;
+  padding: var(--padding);
+  border: solid 3px green;
+  margin: 100px auto 0 auto;
+
+  .title {
+    border: solid 1px pink;
+
+    .first_title,
+    .big_title {
+      @include flex(center, center, row, 5px);
+      width: 100%;
+    }
+
+    .first_title {
+      font-family: var(--mono-font);
+      color: var(--ocean-blue);
+      border: solid 1px yellow;
+      margin-bottom: 20px;
+    }
+
+    .big_title {
+      color: var(--rock-blue);
+      font-size: 50px;
+      font-weight: bold;
+      border: solid 1px yellow;
+    }
+  }
+
+  .message {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1em;
+    color: var(--regent-gray);
+  }
+
+  .Emailme {
+    border: solid 1px red;
+    margin-top: 4em;
+    text-align: center;
+
+    .email {
+      @include btnresetoutline;
+    }
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-family: var(--mono-font);
+  color: var(--regent-gray);
+  font-size: var(--ft-sm);
+  // position: absolute;
+  // bottom: 1em;
+  // left: 50%;
+  // transform: translateX(-50%);
+}
