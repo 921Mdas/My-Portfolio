@@ -10,17 +10,17 @@ const Sidebar = ({ showMenu, setShowMenu }) => {
       <ul className="links">
         <li onClick={() => setShowMenu(false)}>
           <span>01.</span>
-          <a name="about" href="#">
+          <a name="about" href="#about">
             About
           </a>
         </li>
         <li onClick={() => setShowMenu(false)}>
           <span>02.</span>
-          <a href="#">Projects</a>
+          <a href="#projects">Projects</a>
         </li>
         <li onClick={() => setShowMenu(false)}>
           <span>03.</span>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
         <li onClick={() => setShowMenu(false)}>
           <button className="resume">Resume</button>

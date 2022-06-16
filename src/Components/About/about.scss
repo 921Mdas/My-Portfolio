@@ -4,11 +4,10 @@
   width: 80%;
   height: 80vh;
   padding: var(--padding);
-  border: solid 3px green;
   margin: 100px auto 0 auto;
+  position: relative;
 
   .title {
-    border: solid 1px red;
     margin-bottom: 1em;
     @include flex(flex-start, center, row, 15px);
 
@@ -31,19 +30,17 @@
   }
 
   .about_brandstatement {
-    border: solid 1px red;
     @include flex(flex-start, center, row, 15px);
 
     .brandstatement {
-      border: solid 1px yellow;
       font-size: var(--ft-lg);
       color: var(--regent-gray);
       height: 100%;
       width: 70%;
+      line-height: 2rem;
     }
 
     .avatar {
-      border: solid 1px orange;
       height: 40vh;
       width: 50vw;
 
@@ -54,7 +51,6 @@
   }
 
   .stacks {
-    border: solid 2px blue;
     margin-top: 1em;
     p {
       color: var(--regent-gray);
@@ -63,7 +59,6 @@
 
     .stacks_list {
       @include flex(flex-start, center, row, 15px);
-      border: solid 1px plum;
     }
 
     .stack_arrow {

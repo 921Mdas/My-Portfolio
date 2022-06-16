@@ -10,6 +10,11 @@
   height: 8vh;
   font-family: var(--mono-font);
   @include flex(space-between, center, row, 0);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  background: var(--firefly);
 
   .logo {
     border: solid 1px var(--lynch);
@@ -31,7 +36,7 @@
   }
 
   .welcome {
-    $delay: 0.5s;
+    $delay: 0.2s;
     position: relative;
     width: 30%;
     height: 4vh;
@@ -46,12 +51,12 @@
 
     .first_pop {
       $delay: calc($delay);
-      animation: smoothUp $delay ease-in 0.5s 1 forwards;
+      animation: smoothUp 0.5s ease-in $delay 1 forwards;
     }
 
     .second_pop {
-      $delay: calc($delay + 0.5s);
-      animation: smoothUp $delay ease-in 0.5s 1 forwards;
+      $delay: calc($delay + 0.3s);
+      animation: smoothUp 0.5s ease-in $delay 1 forwards;
     }
   }
 

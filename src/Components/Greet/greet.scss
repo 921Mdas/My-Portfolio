@@ -1,17 +1,20 @@
 @import "../../index.scss";
 
 .landing_page {
+  $delay: 1s;
   width: 80%;
   height: 80vh;
   margin-top: 1em;
   padding: var(--padding);
   @include flex(center, flex-start, column, 10px);
-  border: solid 2px green;
   margin: 0 auto;
 
   .greetings {
     font-family: var(--mono-font);
     color: var(--ocean-blue);
+    transform: translateX(100px);
+    animation: leftsmooth 0.5s ease-in $delay 1 forwards;
+    opacity: 0;
   }
 
   .whoami {
@@ -20,18 +23,29 @@
 
     .my_name {
       color: var(--rock-blue);
+      transform: translateY(100px);
+      opacity: 0;
+      animation: opaciySlideUp 0.5s ease-in $delay 1 forwards;
     }
 
     .whatido {
+      $delay: calc($delay + 0.7s);
+      transform: translateY(100px);
+      opacity: 0;
       color: var(--regent-gray);
+      animation: opaciySlideUp 0.5s ease-in $delay 1 forwards;
     }
   }
 
   .statement {
+    $delay: calc($delay + 1s);
     width: 50%;
     color: var(--regent-gray);
     font-size: var(--ft-lg);
     line-height: 2rem;
+    transform: translateY(100px);
+    opacity: 0;
+    animation: opaciySlideUp 0.5s ease-in $delay 1 forwards;
 
     span {
       color: var(--ocean-blue);

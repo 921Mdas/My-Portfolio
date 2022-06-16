@@ -4,12 +4,10 @@
   width: 80%;
   height: max-content;
   padding: var(--padding);
-  border: solid 3px green;
   margin: 100px auto 0 auto;
   position: relative;
 
   .title {
-    border: solid 1px red;
     margin-bottom: 1em;
     @include flex(flex-start, center, row, 15px);
 
@@ -32,12 +30,10 @@
   }
 
   .project01 {
-    border: solid 2px pink;
     @include flex(space-between, center, row, 15px);
     margin-bottom: 3em;
 
     .presentation_screen {
-      border: solid 2px orange;
       width: 40vw;
       height: 60vh;
       perspective: 1200px;
@@ -57,14 +53,12 @@
     }
 
     .presentation_description {
-      border: solid 2px yellow;
       position: absolute;
       width: 40vw;
       height: 35vh;
       right: 2%;
 
       .project_title {
-        border: solid 1px red;
         text-align: right;
         .small_title {
           font-family: var(--mono-font);
@@ -89,7 +83,6 @@
       }
 
       .stack_used {
-        border: solid 1px purple;
         width: 100%;
 
         ul {
@@ -104,7 +97,6 @@
 
       .external_links {
         @include flex(flex-end, center, row, 15px);
-        border: solid 2px red;
         margin-top: 1em;
 
         .github {
@@ -129,11 +121,9 @@
     }
   }
   .project02 {
-    border: solid 2px pink;
     @include flex(space-between, center, row, 15px);
 
     .presentation_screen {
-      border: solid 2px orange;
       width: 40vw;
       height: 60vh;
       perspective: 1200px;
@@ -154,14 +144,12 @@
     }
 
     .presentation_description {
-      border: solid 2px yellow;
       position: absolute;
       width: 40vw;
       height: 35vh;
       left: 2%;
 
       .project_title {
-        border: solid 1px red;
         text-align: left;
         .small_title {
           font-family: var(--mono-font);
@@ -186,7 +174,6 @@
       }
 
       .stack_used {
-        border: solid 1px purple;
         width: 100%;
 
         ul {
@@ -201,7 +188,6 @@
 
       .external_links {
         @include flex(flex-start, center, row, 15px);
-        border: solid 2px red;
         margin-top: 1em;
 
         .github {

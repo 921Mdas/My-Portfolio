@@ -11,17 +11,17 @@ const Network = () => {
     <div className="network">
       <div className="left_network">
         <div className="social">
-          <a href="#">
+          <a href="https://www.linkedin.com/">
             <GrLinkedinOption />
           </a>
         </div>
         <div className="social">
-          <a href="#">
+          <a href="https://github.com/921Mdas/">
             <FaGithubSquare />
           </a>
         </div>
         <div className="social">
-          <a href="#">
+          <a href="https://www.instagram.com/">
             <AiFillInstagram />
           </a>
         </div>
