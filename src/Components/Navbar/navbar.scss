@@ -1,0 +1,84 @@
+@import "../../index.scss";
+
+.hamburger,
+.sidebar {
+  display: none;
+}
+// navbar
+.navbar {
+  padding: var(--padding);
+  height: 8vh;
+  font-family: var(--mono-font);
+  @include flex(space-between, center, row, 0);
+
+  .logo {
+    border: solid 1px var(--lynch);
+    aspect-ratio: 1/1;
+    height: inherit;
+    @include flex(center, center, row, 0);
+  }
+
+  //   *****
+
+  .logo,
+  .links span {
+    color: var(--ocean-blue);
+  }
+
+  .welcome,
+  .links a {
+    color: var(--rock-blue);
+  }
+
+  .welcome {
+    $delay: 0.5s;
+    position: relative;
+    width: 30%;
+    height: 4vh;
+    @include flex(center, center, row, 0);
+    overflow: hidden;
+
+    .first_pop,
+    .second_pop {
+      position: relative;
+      transform: translateY(100px);
+    }
+
+    .first_pop {
+      $delay: calc($delay);
+      animation: smoothUp $delay ease-in 0.5s 1 forwards;
+    }
+
+    .second_pop {
+      $delay: calc($delay + 0.5s);
+      animation: smoothUp $delay ease-in 0.5s 1 forwards;
+    }
+  }
+
+  //   *****
+
+  .links {
+    width: 40vw;
+    height: inherit;
+    @include flex(space-between, center, row, 0);
+
+    li,
+    a {
+      text-decoration: none;
+      list-style: none;
+      transition: all 0.5s ease;
+    }
+
+    .resume {
+      @include btnresetoutline;
+      font-size: var(--ft-med);
+    }
+  }
+
+  //   ***
+  li:hover a {
+    color: var(--ocean-blue);
+  }
+}
+
+// sidebar
