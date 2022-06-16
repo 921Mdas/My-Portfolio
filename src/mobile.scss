@@ -100,7 +100,26 @@
       color: var(--ocean-blue);
     }
   }
+
+  .network {
+    display: none;
+  }
+
+  .counter,
+  .sdx {
+    display: none;
+  }
+
   // ***************navbar
+  //***********landingpage
+
+  .landing_page {
+    width: 100%;
+    .statement {
+      width: 100%;
+      border: solid 1px red;
+    }
+  }
 }
 
 @media screen and (max-width: 550px) {

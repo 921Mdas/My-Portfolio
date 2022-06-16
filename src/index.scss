@@ -34,6 +34,7 @@
   --ft-med: 16px;
   --ft-lg: 18px;
   --ft-xtra: 24px;
+  --ft-giant: 100px;
 }
 
 h1,
@@ -51,6 +52,7 @@ html {
   background: var(--firefly);
   padding: 0;
   margin: 0;
+  font-family: var(--roboto-font);
 }
 
 .Main {

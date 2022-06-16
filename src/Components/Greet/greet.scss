@@ -1,0 +1,40 @@
+@import "../../index.scss";
+
+.landing_page {
+  border: solid 1px red;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  padding: var(--padding);
+  @include flex(center, flex-start, column, 10px);
+  margin: 0 auto;
+
+  .greetings {
+    font-family: var(--mono-font);
+    color: var(--ocean-blue);
+  }
+
+  .whoami {
+    font-size: clamp(var(--ft-xtra), 10vw, var(--ft-giant));
+    font-weight: 900;
+
+    .my_name {
+      color: var(--rock-blue);
+    }
+
+    .whatido {
+      color: var(--regent-gray);
+    }
+  }
+
+  .statement {
+    width: 50%;
+    color: var(--regent-gray);
+    font-size: var(--ft-lg);
+    line-height: 2rem;
+
+    span {
+      color: var(--ocean-blue);
+    }
+  }
+}
