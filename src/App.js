@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 import Navbar from "./Components/Navbar/Navbar";
 import Greet from "./Components/Greet/Greet";
 import Network from "./Components/Network/Network";
@@ -7,15 +9,19 @@ import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
 
 function App() {
+  const [pos, setPos] = useState(0);
+
   return (
     <div className="Main">
       <Navbar />
       <Greet />
-      <Network />
       <Sdx />
-      <About />
-      <Projects />
-      <Contact />
+      <Network />
+      <div className="observer">
+        <About className="target" />
+        <Projects className="target" />
+        <Contact className="target" />
+      </div>
     </div>
   );
 }

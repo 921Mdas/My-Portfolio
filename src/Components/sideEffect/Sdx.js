@@ -8,6 +8,13 @@ import icon5 from "../../assets/django.png";
 import icon6 from "../../assets/python.png";
 import { useState } from "react";
 
+import space from "../../assets/space.png";
+import dj from "../../assets/django.png";
+import js from "../../assets/js.png";
+import python from "../../assets/python.png";
+import redux from "../../assets/redux.png";
+import node from "../../assets/node.png";
+
 const Sdx = () => {
   const [pos, setPos] = useState(0);
   window.addEventListener("scroll", () => {
@@ -21,9 +28,9 @@ const Sdx = () => {
           src={icon1}
           className="img_prlx"
           style={{
-            transform: `translateY(${
-              pos < 500 ? pos : 500
-            }px) rotate(${pos}deg)`,
+            transform: `translateY(${pos}px) rotate(${pos}deg) translateX(${
+              pos / 50
+            }px)  `,
           }}
           alt=""
         />
@@ -49,6 +56,48 @@ const Sdx = () => {
           alt=""
           style={{
             transform: `translateY(${-pos}px) rotate(${pos}deg)`,
+          }}
+        />
+
+        <img src={space} className="img_prlx" alt="" />
+        <img
+          src={dj}
+          alt=""
+          className="img_prlx"
+          style={{
+            transform: `translateY(${-pos}px)`,
+          }}
+        />
+        <img
+          src={js}
+          alt=""
+          className="img_prlx"
+          style={{
+            transform: `translateY(${-pos}px)`,
+          }}
+        />
+        <img
+          src={python}
+          alt=""
+          className="img_prlx"
+          style={{
+            transform: `translateY(${-pos}px)`,
+          }}
+        />
+        <img
+          src={redux}
+          alt=""
+          className="img_prlx"
+          style={{
+            transform: `translateY(${-pos}px) rotate(${pos}deg)`,
+          }}
+        />
+        <img
+          src={node}
+          alt=""
+          className="img_prlx"
+          style={{
+            transform: `translateY(${-pos}px)`,
           }}
         />
       </div>

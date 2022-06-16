@@ -4,12 +4,10 @@
   width: 80%;
   height: 50vh;
   padding: var(--padding);
-  border: solid 3px green;
   margin: 100px auto 0 auto;
+  position: relative;
 
   .title {
-    border: solid 1px pink;
-
     .first_title,
     .big_title {
       @include flex(center, center, row, 5px);
@@ -19,7 +17,6 @@
     .first_title {
       font-family: var(--mono-font);
       color: var(--ocean-blue);
-      border: solid 1px yellow;
       margin-bottom: 20px;
     }
 
@@ -27,7 +24,6 @@
       color: var(--rock-blue);
       font-size: 50px;
       font-weight: bold;
-      border: solid 1px yellow;
     }
   }
 
@@ -40,7 +36,6 @@
   }
 
   .Emailme {
-    border: solid 1px red;
     margin-top: 4em;
     text-align: center;
 
@@ -55,8 +50,23 @@
   font-family: var(--mono-font);
   color: var(--regent-gray);
   font-size: var(--ft-sm);
-  // position: absolute;
-  // bottom: 1em;
-  // left: 50%;
-  // transform: translateX(-50%);
+}
+
+.social_networks {
+  display: none;
+}
+
+.scrollup {
+  position: absolute;
+  bottom: 20%;
+  right: 0%;
+  width: 100%;
+  height: 10vh;
+  font-size: var(--ft-2xtra);
+
+  a {
+    color: var(--ocean-blue);
+    position: absolute;
+    right: 0;
+  }
 }

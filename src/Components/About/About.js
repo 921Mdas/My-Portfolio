@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import muggshot from "../../assets/django.png";
 import "./about.scss";
 
 import { BiRightArrow } from "react-icons/bi";
 
 const About = () => {
+  const [pos, setPos] = useState(0);
+  window.addEventListener("scroll", () => {
+    setPos(window.scrollY);
+  });
+
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="title">
         <span>01.</span> <h1>About Me</h1>
         <div className="about_line"></div>

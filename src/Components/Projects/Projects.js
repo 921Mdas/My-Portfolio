@@ -9,7 +9,7 @@ import { BsArrowUpRightSquare } from "react-icons/bs";
 
 const Projects = () => {
   return (
-    <div className="projects">
+    <div className="projects" id="projects">
       <div className="title">
         <span>02.</span> <h1>Projects</h1>
         <div className="project_line"></div>
@@ -41,12 +41,12 @@ const Projects = () => {
             </div>
             <div className="external_links">
               <div className="github">
-                <a href="#">
+                <a href="https://github.com/921Mdas/BNLmusic">
                   <FaGithubSquare />
                 </a>
               </div>
               <div className="liveproject">
-                <a href="#">
+                <a href="https://banaleo.herokuapp.com/">
                   <BsArrowUpRightSquare />
                 </a>
               </div>
@@ -79,12 +79,12 @@ const Projects = () => {
             </div>
             <div className="external_links">
               <div className="github">
-                <a href="#">
+                <a href="https://github.com/921Mdas/DN">
                   <FaGithubSquare />
                 </a>
               </div>
               <div className="liveproject">
-                <a href="#">
+                <a href="https://dashnewsmads.herokuapp.com/">
                   <BsArrowUpRightSquare />
                 </a>
               </div>
