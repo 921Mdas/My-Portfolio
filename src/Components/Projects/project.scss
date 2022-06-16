@@ -1,0 +1,228 @@
+@import "../../index.scss";
+
+.projects {
+  width: 80%;
+  height: max-content;
+  padding: var(--padding);
+  border: solid 3px green;
+  margin: 100px auto 0 auto;
+  position: relative;
+
+  .title {
+    border: solid 1px red;
+    margin-bottom: 1em;
+    @include flex(flex-start, center, row, 15px);
+
+    .project_line {
+      height: 2px;
+      width: 30%;
+      background-color: var(--rock-blue);
+      opacity: 0.2;
+    }
+
+    span {
+      font-size: var(--ft-2xtra);
+      color: var(--ocean-blue);
+    }
+
+    h1 {
+      color: var(--rock-blue);
+      font-size: clamp(var(--ft-xtra), 5vw, var(--ft-22xtra));
+    }
+  }
+
+  .project01 {
+    border: solid 2px pink;
+    @include flex(space-between, center, row, 15px);
+    margin-bottom: 3em;
+
+    .presentation_screen {
+      border: solid 2px orange;
+      width: 40vw;
+      height: 60vh;
+      perspective: 1200px;
+      transform-style: preserve-3d;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(1);
+        transform: translateZ(0px) rotateY(12deg);
+        transition: all 0.5s ease-in;
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+
+    .presentation_description {
+      border: solid 2px yellow;
+      position: absolute;
+      width: 40vw;
+      height: 35vh;
+      right: 2%;
+
+      .project_title {
+        border: solid 1px red;
+        text-align: right;
+        .small_title {
+          font-family: var(--mono-font);
+          color: var(--ocean-blue);
+        }
+
+        .big_title {
+          color: var(--rock-blue);
+          font-size: var(--ft-2xtra);
+          font-weight: bold;
+        }
+      }
+
+      .project_descr {
+        background: var(--bunting);
+        margin-top: 1em;
+        height: 15vh;
+        color: var(--regent-gray);
+        p {
+          padding: 1em;
+        }
+      }
+
+      .stack_used {
+        border: solid 1px purple;
+        width: 100%;
+
+        ul {
+          @include flex(flex-end, center, row, 15px);
+          li {
+            list-style: none;
+            color: var(--rock-blue);
+            font-family: var(--mono-font);
+          }
+        }
+      }
+
+      .external_links {
+        @include flex(flex-end, center, row, 15px);
+        border: solid 2px red;
+        margin-top: 1em;
+
+        .github {
+          font-size: 30px;
+        }
+
+        .liveproject {
+          font-size: 25px;
+        }
+
+        .github a,
+        .liveproject a {
+          color: var(--regent-gray);
+          cursor: pointer;
+          transition: all 0.5s ease-in;
+
+          &:hover {
+            color: var(--rock-blue);
+          }
+        }
+      }
+    }
+  }
+  .project02 {
+    border: solid 2px pink;
+    @include flex(space-between, center, row, 15px);
+
+    .presentation_screen {
+      border: solid 2px orange;
+      width: 40vw;
+      height: 60vh;
+      perspective: 1200px;
+      transform-style: preserve-3d;
+      margin-left: 45%;
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: grayscale(1);
+        transform: translateZ(0px) rotateY(-12deg);
+        transition: all 0.5s ease-in;
+        &:hover {
+          filter: grayscale(0);
+        }
+      }
+    }
+
+    .presentation_description {
+      border: solid 2px yellow;
+      position: absolute;
+      width: 40vw;
+      height: 35vh;
+      left: 2%;
+
+      .project_title {
+        border: solid 1px red;
+        text-align: left;
+        .small_title {
+          font-family: var(--mono-font);
+          color: var(--ocean-blue);
+        }
+
+        .big_title {
+          color: var(--rock-blue);
+          font-size: var(--ft-2xtra);
+          font-weight: bold;
+        }
+      }
+
+      .project_descr {
+        background: var(--bunting);
+        margin-top: 1em;
+        height: 15vh;
+        color: var(--regent-gray);
+        p {
+          padding: 1em;
+        }
+      }
+
+      .stack_used {
+        border: solid 1px purple;
+        width: 100%;
+
+        ul {
+          @include flex(flex-end, center, row, 15px);
+          li {
+            list-style: none;
+            color: var(--rock-blue);
+            font-family: var(--mono-font);
+          }
+        }
+      }
+
+      .external_links {
+        @include flex(flex-start, center, row, 15px);
+        border: solid 2px red;
+        margin-top: 1em;
+
+        .github {
+          font-size: 30px;
+        }
+
+        .liveproject {
+          font-size: 25px;
+        }
+
+        .github a,
+        .liveproject a {
+          color: var(--regent-gray);
+          cursor: pointer;
+          transition: all 0.5s ease-in;
+
+          &:hover {
+            color: var(--rock-blue);
+          }
+        }
+      }
+    }
+  }
+}
