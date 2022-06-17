@@ -41,7 +41,7 @@ const Contact = () => {
 
         <div className="Emailme">
           <form action="mailto:rodeomads@gmail.com" method="GET">
-            <button className="email">Invite me</button>
+            <button className="email">Contact me</button>
           </form>
         </div>
 

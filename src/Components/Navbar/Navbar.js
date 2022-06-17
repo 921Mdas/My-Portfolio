@@ -18,7 +18,7 @@ const Navbar = () => {
     <>
       <div className="navbar">
         <div className="welcome">
-          <span className="first_pop">Welcome,</span>
+          <span className="first_pop">Bonjour,</span>
           <span className="second_pop">nice to meet you!</span>
         </div>
         <ul className="links">
