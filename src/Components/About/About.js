@@ -3,6 +3,7 @@ import muggshot from "../../assets/django.png";
 import "./about.scss";
 
 import { BiRightArrow } from "react-icons/bi";
+import deo from "../../assets/Deo.jpeg";
 
 const About = () => {
   const [pos, setPos] = useState(0);
@@ -19,23 +20,19 @@ const About = () => {
 
       <div className="about_brandstatement">
         <div className="brandstatement">
-          Hello! My name is Brittany and I enjoy creating things that live on
-          the internet. My interest in web development started back in 2012 when
-          I decided to try editing custom Tumblr themes — turns out hacking
-          together a custom reblog button taught me a lot about HTML & CSS!
+          I knew about web development back in 2011. I was working small jobs
+          making posters and flyers when someone asked if I could build a
+          website — turns out research and hard work can do anything! (see my
+          2011 website <a href="http://chea-ar.org/Index.html">here</a> )
           <br />
-          <br />
-          Fast-forward to today, and I’ve had the privilege of working at an
-          advertising agency, a start-up, a huge corporation, and a student-led
-          design studio. My main focus these days is building accessible,
-          inclusive products and digital experiences at Upstatement for a
-          variety of clients. <br /> <br /> I also recently launched a course
-          that covers everything you need to build a web app with the Spotify
-          API using Node & React. Here are a few technologies I’ve been working
-          with recently:
+          <br />I followed a different path working in sales (Api,
+          features,etc.) for a software company and throughout the years my
+          curiosity for programming had me dig deep to understand how best to
+          help clients succeed. I have since acquired skills to develop, test,
+          and deploy well architected software.
         </div>
         <div className="avatar">
-          <img src={muggshot} alt="" />
+          <img src={deo} alt="" />
         </div>
       </div>
 

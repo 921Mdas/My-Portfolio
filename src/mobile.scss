@@ -198,6 +198,11 @@
       bottom: 25%;
     }
   }
+
+  .overlay_screen1,
+  .overlay_screen2 {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 550px) {

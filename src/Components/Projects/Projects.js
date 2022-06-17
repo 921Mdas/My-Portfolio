@@ -4,6 +4,7 @@ import "./project.scss";
 import bnleo1 from "../../assets/bnleo_pg2.png";
 import bnleo2 from "../../assets/bnleo_pg1.png";
 import dnpg1 from "../../assets/dn_pg1.png";
+import bndash from "../../assets/bn3.png";
 import { FaGithubSquare } from "react-icons/fa";
 import { BsArrowUpRightSquare } from "react-icons/bs";
 
@@ -17,26 +18,28 @@ const Projects = () => {
       <div className="project_list">
         <div className="project_presentation project01">
           <div className="presentation_screen">
+            <div className="overlay_screen1"></div>
             <img src={bnleo2} alt="" />
           </div>
           <div className="presentation_description">
             <div className="project_title">
-              <p className="small_title">Crud Project</p>
+              <p className="small_title">Music App</p>
               <p className="big_title">Bana Leo</p>
             </div>
             <div className="project_descr">
               <p>
-                A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                iTerm, and more. Available on Visual Studio Marketplace, Package
-                Control, Atom Package Manager, and npm.
+                A music application created to archive, and listen to african
+                hits from 1950s to early 1980s. For now, it includes crud
+                functionalities to manage our playlists.
               </p>
             </div>
             <div className="stack_used">
               <ul>
                 <li>React</li>
-                <li>Redux</li>
+                <li>Aws</li>
                 <li>Express</li>
                 <li>Node.js</li>
+                <li>Mongodb</li>
               </ul>
             </div>
             <div className="external_links">
@@ -55,26 +58,28 @@ const Projects = () => {
         </div>
         <div className="project_presentation project02">
           <div className="presentation_screen">
-            <img src={dnpg1} alt="" />
+            <div className="overlay_screen2"></div>
+            <img src={bndash} alt="" />
           </div>
           <div className="presentation_description">
             <div className="project_title">
-              <p className="small_title">Crud Project</p>
-              <p className="big_title">Bana Leo</p>
+              <p className="small_title">Mini blog</p>
+              <p className="big_title">Daily News</p>
             </div>
             <div className="project_descr">
               <p>
-                A minimal, dark blue theme for VS Code, Sublime Text, Atom,
-                iTerm, and more. Available on Visual Studio Marketplace, Package
-                Control, Atom Package Manager, and npm.
+                A mini blog, where you can create and publish articles in one
+                board and News publications can bid on your content. This
+                includes a static dashboard soon dynamic,to track your top
+                performing content.
               </p>
             </div>
             <div className="stack_used">
               <ul>
                 <li>React</li>
-                <li>Redux</li>
                 <li>Express</li>
-                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Jwt</li>
               </ul>
             </div>
             <div className="external_links">
