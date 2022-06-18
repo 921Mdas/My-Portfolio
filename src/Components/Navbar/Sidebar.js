@@ -20,10 +20,17 @@ const Sidebar = ({ showMenu, setShowMenu }) => {
         </li>
         <li onClick={() => setShowMenu(false)}>
           <span>03.</span>
-          <a href="#contact">Contact</a>
+          <a href="#Contact">Contact</a>
         </li>
         <li onClick={() => setShowMenu(false)}>
-          <button className="resume">Resume</button>
+          <button className="resume">
+            <a
+              target={"/"}
+              href="https://drive.google.com/file/d/1Hu3Qk0aN407Rp_QNFv6S8Ccw6n-We-1r/view?usp=sharing"
+            >
+              Resume
+            </a>
+          </button>
         </li>
       </ul>
     </div>
