@@ -40,7 +40,7 @@ const Navbar = () => {
             <button className="resume">
               <a
                 target={"/"}
-                href="https://drive.google.com/file/d/1Hu3Qk0aN407Rp_QNFv6S8Ccw6n-We-1r/view?usp=sharing"
+                href="https://drive.google.com/file/d/1BuZ6xg2GdsHI98OLqyAgu5xJuycW5FCQ/view?usp=sharing"
               >
                 Resume
               </a>{" "}

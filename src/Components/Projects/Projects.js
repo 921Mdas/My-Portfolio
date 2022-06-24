@@ -3,6 +3,7 @@ import React from "react";
 import "./project.scss";
 import bnleo1 from "../../assets/bnleo_pg2.png";
 import bnleo2 from "../../assets/bnleo_pg1.png";
+import pdart01 from "../../assets/pendart01.png";
 import dnpg1 from "../../assets/dn_pg1.png";
 import bndash from "../../assets/bn3.png";
 import { FaGithubSquare } from "react-icons/fa";
@@ -90,6 +91,42 @@ const Projects = () => {
               </div>
               <div className="liveproject">
                 <a href="https://dashnewsmads.herokuapp.com/">
+                  <BsArrowUpRightSquare />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="project_presentation project03">
+          <div className="presentation_screen">
+            <div className="overlay_screen1"></div>
+            <img src={pdart01} alt="" />
+          </div>
+          <div className="presentation_description">
+            <div className="project_title">
+              <p className="small_title">NFT APP</p>
+              <p className="big_title">PendArt</p>
+            </div>
+            <div className="project_descr">
+              <p>
+                An NFT application created to bid on unique african arts, with
+                the use of crypto. This includes a landing page, home page and a
+                detailed view listing bids.
+              </p>
+            </div>
+            <div className="stack_used">
+              <ul>
+                <li>React Native</li>
+              </ul>
+            </div>
+            <div className="external_links">
+              <div className="github">
+                <a href="https://github.com/921Mdas/PENDART">
+                  <FaGithubSquare />
+                </a>
+              </div>
+              <div className="liveproject">
+                <a href="https://expo.dev/@rodeomads/projects/pendart">
                   <BsArrowUpRightSquare />
                 </a>
               </div>
