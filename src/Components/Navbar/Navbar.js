@@ -36,7 +36,7 @@ const Navbar = () => {
             <span>03.</span>
             <a href="#Contact">Contact</a>
           </li>
-          <li>
+          {/* <li>
             <button className="resume">
               <a
                 target={"/"}
@@ -45,7 +45,7 @@ const Navbar = () => {
                 Resume
               </a>{" "}
             </button>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="hamburger" onClick={sideDrawer}>

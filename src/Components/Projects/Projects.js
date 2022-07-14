@@ -29,9 +29,9 @@ const Projects = () => {
             </div>
             <div className="project_descr">
               <p>
-                A music application created to archive, and listen to african
-                hits from 1950s to early 1980s. For now, it includes crud
-                functionalities to manage our playlists.
+                A music application allowing users to listen to african hits
+                from 1950s to early 1980s. It includes crud functionalities to
+                manage a playlists and a bio.
               </p>
             </div>
             <div className="stack_used">
@@ -69,10 +69,10 @@ const Projects = () => {
             </div>
             <div className="project_descr">
               <p>
-                A mini blog, where you can create and publish articles in one
-                board and News publications can bid on your content. This
-                includes a static dashboard soon dynamic,to track your top
-                performing content.
+                A mini blog, allowing users to create and publish articles and
+                perform crud tasks. This includes a static dashboard soon
+                dynamic,to track top performing content based on views and
+                shares.
               </p>
             </div>
             <div className="stack_used">
@@ -109,14 +109,16 @@ const Projects = () => {
             </div>
             <div className="project_descr">
               <p>
-                An NFT application created to bid on unique african arts, with
-                the use of crypto. This includes a landing page, home page and a
-                detailed view listing bids.
+                An NFT application allowing users to bid on unique african arts
+                using Ethereum. This includes a landing page, detailed
+                view,cart, and checkout form.
               </p>
             </div>
             <div className="stack_used">
               <ul>
                 <li>React Native</li>
+                <li>Redux Toolkit</li>
+                <li>Firebase</li>
               </ul>
             </div>
             <div className="external_links">
@@ -126,7 +128,7 @@ const Projects = () => {
                 </a>
               </div>
               <div className="liveproject">
-                <a href="https://expo.dev/@rodeomads/projects/pendart">
+                <a href="https://expo.dev/@rodeomads/PendArt">
                   <BsArrowUpRightSquare />
                 </a>
               </div>

@@ -22,7 +22,7 @@ const Sidebar = ({ showMenu, setShowMenu }) => {
           <span>03.</span>
           <a href="#Contact">Contact</a>
         </li>
-        <li onClick={() => setShowMenu(false)}>
+        {/* <li onClick={() => setShowMenu(false)}>
           <button className="resume">
             <a
               target={"/"}
@@ -31,7 +31,7 @@ const Sidebar = ({ showMenu, setShowMenu }) => {
               Resume
             </a>
           </button>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

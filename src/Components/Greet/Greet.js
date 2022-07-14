@@ -14,8 +14,8 @@ const Greet = () => {
         stories into <span>well architected software. </span>
         With a professional background in account management SaaS (software as a
         service), I have acquired{" "}
-        <span>client-focused, and communication skills</span> I can bring to
-        your team.
+        <span>client-focused skills, communication skills,</span>that I can use
+        together with my software engineering skills to contribute in your team.
       </div>
     </div>
   );

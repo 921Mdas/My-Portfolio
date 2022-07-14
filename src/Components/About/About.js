@@ -20,16 +20,17 @@ const About = () => {
 
       <div className="about_brandstatement">
         <div className="brandstatement">
-          My Interest web development back in 2013. I was working small jobs
-          making posters and flyers when someone asked if I could build a
-          website — turns out research and hard work can do anything! (see my
-          2013 website <a href="http://chea-ar.org/Index.html">here</a> )
+          My Interest in web development started back in 2013. I was working
+          small jobs making posters and flyers when someone asked if I could
+          build a website — turns out research and hard work can do anything!
+          (please see my 2013 website{" "}
+          <a href="http://chea-ar.org/Index.html">here</a> )
           <br />
           <br />I followed a different path working in sales (Software,Api,
-          features,etc.) for a software company and throughout the years my
+          features,etc.) for a software company and throughout the years, my
           curiosity for programming had me dig deep to understand how best to
-          help clients succeed. I have since acquired skills to develop, test,
-          and deploy well architected software.
+          improve clients' experience. I have since acquired skills to develop,
+          test, and deploy full stack applications.
         </div>
         <div className="avatar">
           <img src={deo} alt="" />
@@ -73,7 +74,7 @@ const About = () => {
               <span>
                 <BiRightArrow className="stack_arrow" />
               </span>{" "}
-              Python
+              MongoDB
             </p>
             <p className="stack6">
               {" "}
