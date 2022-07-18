@@ -2,7 +2,7 @@
 
 .contact_section {
   width: 80%;
-  height: 50vh;
+  height: max-content !important;
   padding: var(--padding);
   margin: 100px auto 0 auto;
   position: relative;

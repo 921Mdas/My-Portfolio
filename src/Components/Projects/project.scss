@@ -89,7 +89,7 @@
       .project_descr {
         background: var(--bunting);
         margin-top: 1em;
-        height: 16vh;
+        height: max-content !important;
         color: var(--regent-gray);
         box-shadow: var(--shadow-blue);
         p {
@@ -140,7 +140,7 @@
     @include flex(space-between, center, row, 15px);
 
     .project_descr {
-      height: 18vh !important;
+      height: max-content !important;
       p {
         line-height: 25px;
       }
@@ -255,7 +255,7 @@
     margin-top: 3em;
 
     .project_descr {
-      height: 18vh !important;
+      height: max-content !important;
       p {
         line-height: 25px;
       }

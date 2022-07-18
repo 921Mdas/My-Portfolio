@@ -3,7 +3,7 @@
 .landing_page {
   $delay: 1s;
   width: 80%;
-  height: 80vh;
+  height: max-content !important;
   margin-top: 1em;
   padding: var(--padding);
   @include flex(center, flex-start, column, 10px);

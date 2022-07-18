@@ -2,7 +2,7 @@
 
 .about {
   width: 80%;
-  height: 95vh;
+  height: max-content !important;
   padding: var(--padding);
   margin: 20px auto 0 auto;
   position: relative;
@@ -94,7 +94,7 @@
     .stack1Comp {
       justify-content: center;
       align-items: center;
-      margin: 0 auto;
+      margin: 10px auto;
       display: flex;
       justify-content: center;
       align-items: center;
