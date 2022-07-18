@@ -6,16 +6,25 @@ const Greet = () => {
     <div className="landing_page" id="nav">
       <div className="greetings">My name is</div>
       <div className="whoami">
-        <div className="my_name">Deo Gratias</div>
-        <div className="whatido">I build web apps</div>
+        <div className="my_name">DEO GRATIAS</div>
+        <div className="whatido">I build user-friendly apps</div>
       </div>
       <div className="statement">
-        I'm a software engineer driven by the process of transforming user
-        stories into <span>well architected software. </span>
-        With a professional background in account management SaaS (software as a
-        service), I have acquired{" "}
-        <span>client-focused skills, communication skills,</span>that I can use
-        together with my software engineering skills to contribute in your team.
+        <div>
+          I'm a software developer based out of Toronto. From working as a
+          Client Success consultant in a SaaS (Software as a Service) Company to
+          writing code for the web, I have successfully combined{" "}
+          <span>client-focused skills</span> and
+          <span> programming skills</span> to transform less-defined user
+          stories into well-architected applications.
+        </div>
+        <div>
+          <br />
+          I'm excited to continue refining my skills with the right company and
+          to have an opportunity to contribute toward more inclusivity and
+          diversity in tech. I'm looking forward to meeting over coffee ☕️ or
+          via my social links 👋.
+        </div>
       </div>
     </div>
   );

@@ -29,17 +29,19 @@
     }
 
     .whatido {
-      $delay: calc($delay + 0.7s);
+      $delay: calc($delay + 0.3s);
       transform: translateY(100px);
       opacity: 0;
       color: var(--regent-gray);
       animation: opaciySlideUp 0.5s ease-in $delay 1 forwards;
+      font-size: clamp(20px, 5vw, 60px);
+      margin-bottom: 0.7em;
     }
   }
 
   .statement {
-    $delay: calc($delay + 1s);
-    width: 50%;
+    $delay: calc($delay + 0.4s);
+    width: 70%;
     color: var(--regent-gray);
     font-size: var(--ft-lg);
     line-height: 2rem;

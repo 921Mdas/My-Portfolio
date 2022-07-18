@@ -17,9 +17,10 @@ const Contact = () => {
           <p className="big_title">Contact Me</p>
         </div>
 
-        <p className="message">
+        <div className="message">
           I’m currently interviewing for new opportunities, my inbox is always
-          open. Looking forward to hearing from you!
+          open. Looking forward to hearing from you! <br /> <br /> Email:
+          rodeomads@gmail.com
           <div className="social_networks">
             <div className="social">
               <a href="https://www.linkedin.com/">
@@ -37,7 +38,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-        </p>
+        </div>
 
         <div className="Emailme">
           <form action="mailto:rodeomads@gmail.com" method="GET">

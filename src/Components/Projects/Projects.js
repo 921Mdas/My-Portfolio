@@ -1,5 +1,5 @@
 //  @include flex(flex-start, center, row, 15px);
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./project.scss";
 import bnleo1 from "../../assets/bnleo_pg2.png";
 import bnleo2 from "../../assets/bnleo_pg1.png";
@@ -11,12 +11,12 @@ import { BsArrowUpRightSquare } from "react-icons/bs";
 
 const Projects = () => {
   return (
-    <div className="projects" id="projects">
+    <div className={`projects`} id="projects">
       <div className="title">
         <span>02.</span> <h1>Projects</h1>
         <div className="project_line"></div>
       </div>
-      <div className="project_list">
+      <div className={`project_list`}>
         <div className="project_presentation project01">
           <div className="presentation_screen">
             <div className="overlay_screen1"></div>
@@ -29,9 +29,11 @@ const Projects = () => {
             </div>
             <div className="project_descr">
               <p>
-                A music application allowing users to listen to african hits
-                from 1950s to early 1980s. It includes crud functionalities to
-                manage a playlists and a bio.
+                You have a music event? Say goodbye to spreadsheets. Banaleo
+                allows your team to create a list of all performing artists,
+                their bio and the tracks you want them to perform. Decide
+                together which musician is a good fit and update information in
+                real-time
               </p>
             </div>
             <div className="stack_used">
@@ -69,10 +71,11 @@ const Projects = () => {
             </div>
             <div className="project_descr">
               <p>
-                A mini blog, allowing users to create and publish articles and
-                perform crud tasks. This includes a static dashboard soon
-                dynamic,to track top performing content based on views and
-                shares.
+                Are you a student working on a group essay? This is an
+                alternative to saving in Microsoft word and forwarding to your
+                classmates via email at each edit. DN allows you and your team
+                to work in one interface online, and save the best version in
+                your favourite.
               </p>
             </div>
             <div className="stack_used">
@@ -109,15 +112,17 @@ const Projects = () => {
             </div>
             <div className="project_descr">
               <p>
-                An NFT application allowing users to bid on unique african arts
-                using Ethereum. This includes a landing page, detailed
-                view,cart, and checkout form.
+                Brilliant African artists in less privileged areas sell their
+                valuable Art for so little. What if they could have access to an
+                international market without resellers taking advantage of their
+                work? PendArt allows its users to purchase unique African arts
+                directly from the artist.
               </p>
             </div>
             <div className="stack_used">
               <ul>
                 <li>React Native</li>
-                <li>Redux Toolkit</li>
+                <li>Redux</li>
                 <li>Firebase</li>
               </ul>
             </div>

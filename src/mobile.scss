@@ -127,9 +127,14 @@
   //***********landingpage
 
   .landing_page {
-    width: 100%;
-    .statement {
+    width: 100% !important;
+
+    .whoami {
       width: 100%;
+    }
+
+    .statement {
+      width: 100% !important;
     }
   }
 
@@ -216,7 +221,11 @@
 
     .about_brandstatement {
       .avatar {
+        margin-bottom: 0px;
         width: 100%;
+        img {
+          width: 70%;
+        }
       }
     }
 
@@ -250,7 +259,18 @@
 
           .project_descr {
             margin-bottom: 2em;
-            height: max-content;
+            height: max-content !important;
+          }
+        }
+      }
+
+      .project03 {
+        .presentation_description {
+          height: max-content;
+
+          .project_descr {
+            margin-bottom: 2em;
+            height: max-content !important;
           }
         }
       }
@@ -280,6 +300,37 @@
 }
 
 @media screen and (max-width: 450px) {
+  .landing_page {
+    padding-top: 1em;
+    margin: 1.5em 0;
+  }
+
+  .stacks_list {
+    flex-wrap: wrap;
+
+    .stack_skill {
+      border: solid 1px var(--regent-gray);
+      padding: 10px;
+    }
+  }
+
+  .project02 {
+    .presentation_description {
+      height: max-content;
+
+      .project_descr {
+        margin-bottom: 1em !important;
+        height: 23vh !important;
+      }
+    }
+  }
+
+  .project03 {
+    .project_descr {
+      height: 30vh !important;
+    }
+  }
+
   .contact_section {
     .scrollup {
       left: 0%;

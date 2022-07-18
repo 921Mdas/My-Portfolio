@@ -89,11 +89,12 @@
       .project_descr {
         background: var(--bunting);
         margin-top: 1em;
-        height: 15vh;
+        height: 16vh;
         color: var(--regent-gray);
         box-shadow: var(--shadow-blue);
         p {
           padding: 1em;
+          line-height: 22px;
         }
       }
 
@@ -137,6 +138,13 @@
   }
   .project02 {
     @include flex(space-between, center, row, 15px);
+
+    .project_descr {
+      height: 18vh !important;
+      p {
+        line-height: 25px;
+      }
+    }
 
     .presentation_screen {
       width: 40vw;
@@ -245,6 +253,13 @@
     @include flex(space-between, center, row, 15px);
     margin-bottom: 3em;
     margin-top: 3em;
+
+    .project_descr {
+      height: 18vh !important;
+      p {
+        line-height: 25px;
+      }
+    }
 
     .presentation_screen {
       width: 40vw;
