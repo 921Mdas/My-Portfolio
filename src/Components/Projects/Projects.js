@@ -48,12 +48,12 @@ const Projects = () => {
             </div>
             <div className="external_links">
               <div className="github">
-                <a href="https://banaleo-app.herokuapp.com/">
+                <a href="https://github.com/921Mdas/Bana-Leo-BNLmusic-">
                   <FaGithubSquare />
                 </a>
               </div>
               <div className="liveproject">
-                <a href="https://banaleo.herokuapp.com/">
+                <a href="https://banaleo-app.herokuapp.com/">
                   <BsArrowUpRightSquare />
                 </a>
               </div>
