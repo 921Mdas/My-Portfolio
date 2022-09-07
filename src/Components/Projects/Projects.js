@@ -48,7 +48,7 @@ const Projects = () => {
             </div>
             <div className="external_links">
               <div className="github">
-                <a href="https://github.com/921Mdas/BNLmusic">
+                <a href="https://banaleo-app.herokuapp.com/">
                   <FaGithubSquare />
                 </a>
               </div>
